@@ -1,0 +1,172 @@
+a.links 
+{
+	text-decoration: none;
+}
+
+a:link.links
+{
+	color: rgba(245, 252, 255, 0.9);
+}
+
+a:visited.links
+{
+	color: rgba(245, 252, 255, 0.9);
+}
+
+a:hover.links
+{
+	color: blue;
+}
+
+a:active.links
+{
+	color: rgba(245, 252, 255, 0.9);
+}
+
+h2.links
+{
+	color: white;
+	margin: auto;
+	vertical-align: middle;
+
+}
+
+body 
+{
+	background: rgba(56, 218, 242, 1);
+	margin: 0;
+	min-height: 100%;
+}
+
+/* Home page CSS sheet*/
+
+#centreContent
+{
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	top: 0%;
+	bottom: 0%;
+	//border: 3px solid black;
+	background: rgba(56, 218, 242);
+}
+
+#centreBackground
+{
+	position: fixed;
+	left: 10%;
+	right: 10%;
+	height: 100%;
+	background: yellow;
+	z-index: -1;
+}
+
+#projects
+{
+	display: none;
+	background: rgba(56, 218, 242);
+	border-bottom: 1px solid black;
+}
+
+.allMenus
+{
+	position: absolute;
+	left: 55%;
+	right: 10%;
+	width: 200px;
+}
+#navbar
+{
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	height: 100px;
+	//border: 3px solid black;
+	text-align: center;
+	font-size: 25;
+}
+
+#content
+{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 10%;
+	bottom: 90%;
+}
+
+#mainTitle
+{
+	text-align: center;
+	font-size: 150;
+	font-family: Ariel;
+	color: rgba(245, 252, 255, 0.9);
+	font-style: italic;
+	margin-bottom:  0;
+	margin-top: 200px;
+}
+
+#subheading
+{
+	text-align: center;
+	font-size: 30px;
+	line-height: 0.3;
+	color: rgba(245, 252, 255, 0.9);
+	font-family: Ariel;
+}
+
+#image1
+{
+	width: 300;
+	height: 300;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	//padding: 30px;
+	border: 3px solid black;
+}
+	
+
+/* Contact Us CSS Sheet */
+
+
+#mainTitleContact
+{
+	text-align: center;
+	font-size: 150;
+	font-family: Ariel;
+	color: rgba(245, 252, 255, 0.9);
+	font-style: italic;
+	margin-bottom:  0;
+	margin-top: 200px;
+}
+
+
+/* CV CSS Sheet */
+
+
+#mainTitleCV
+{
+	text-align: center;
+	font-size: 150;
+	font-family: Ariel;
+	color: rgba(245, 252, 255, 0.9);
+	font-style: italic;
+	margin-bottom:  0;
+	margin-top: 200px;
+}
+
+
+/* Projects CSS Sheet */
+
+
+#mainTitleProjects
+{
+	text-align: center;
+	font-size: 150;
+	font-family: Ariel;
+	color: rgba(245, 252, 255, 0.9);
+	font-style: italic;
+	margin-bottom:  0;
+	margin-top: 200px;
+}
