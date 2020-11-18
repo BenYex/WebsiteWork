@@ -1,0 +1,92 @@
+<html>
+
+	<head>
+		<title>HTML5 Canvas</title>
+		
+			<script>
+				var x = 10;
+				var playerImage;
+				var frameNumber = 0;
+				
+				function load()
+				{
+					//setup that playerImage variable
+					playerImage = new Image();
+					
+					//load the image file we want into that image variable
+					playerImage.src = "images/player.png";
+				}
+				
+			
+				function main()
+				{
+					//call the load function
+					load();
+					
+					// get a reference to our canvas by the specified ID
+					var canvas = document.getElementById("canvas");
+					
+					// Set the width and height
+					canvas.width = 640;
+					canvas.height = 480;
+				
+					// create our context (like a pen to draw with)
+					var ctx = canvas.getContext("2d");
+					
+					// call our draw function
+					draw(ctx);
+				}
+				
+				
+				function draw(ctx)
+				{
+					//set the pen to gray, draw big rectangle
+					ctx.fillStyle = "grey";
+					ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+					
+					var frameWidth = playerImage.width / 5;
+					var frameHeight = playerImage.height / 4;
+				
+					//draw the player image
+					ctx.drawImage(playerImage, 
+						frameNumber * frameWidth, 0, 		//where (x, y) in src image to draw from
+						frameWidth, frameHeight, 			//how much (w, h) of src image to draw
+						x, 50, 							//where on canvas to start drawing (x, y)
+						200, 200);							//how big to draw on canvas (w, h)
+					
+					// Increase x by 1
+					//x++;
+					
+					//Changing the frame of the animation
+					frameNumber++;
+					if (frameNumber > 4)
+					{
+						frameNumber = 0;
+					}
+				
+					// Ask the browser to call this function again as soon as it can
+					window.requestAnimationFrame(function(){draw(ctx);});			
+				}
+				
+				function keydown(event)
+				{
+					if (event.key =="a")
+					{
+					x-=10;
+					}
+					else if(event.key == "d")
+					{
+					x+=10;
+					}
+				}
+				
+				window.onload = main;
+				window.addEventListener("keydown", keydown);
+			</script>
+	</head>
+	
+	<body>
+		<canvas id="canvas" style="background: grey"></canvas>
+	</body>
+
+</html>
