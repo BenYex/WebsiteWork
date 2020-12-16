@@ -1,3 +1,4 @@
+
 a.links 
 {
 	text-decoration: none;
@@ -65,16 +66,32 @@ body
 {
 	display: none;
 	background: rgba(56, 218, 242);
-	border-bottom: 1px solid black;
+
 }
 
-.allMenus
+#CV
+{
+	display: none;
+	background: rgba(56, 218, 242);
+
+}
+
+.ProjectsMenu
 {
 	position: absolute;
-	left: 55%;
+	left: 55.2%;
 	right: 10%;
-	width: 200px;
+	width: 230px;
 }
+
+.CVMenu
+{
+	position: absolute;
+	left: 51%;
+	right: 10%;
+	width: 230px;
+}
+
 #navbar
 {
 	position: absolute;

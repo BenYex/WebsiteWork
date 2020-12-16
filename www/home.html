@@ -6,6 +6,7 @@
 
 			function show(id)
 			{
+				hideAllMenus()
 				var div = document.getElementById(id)
 				div.style.display = "block";
 			}
@@ -19,6 +20,7 @@
 			function hideAllMenus()
 			{
 				hide('projects');
+				hide('CV');
 			}
 			
 		</script>
@@ -30,30 +32,41 @@
 			<div id="centreContent"></div>
 			<div id="navbar">
 				<h2 id="links">
-					<a class="links" href="home.html">Home</a> |
-					<a class="links" href="contact.html">Contact</a> |
-					<a class="links" href="CV.html">CV</a> |
+					<a class="links" onmouseenter="hide('CV')" href="home.html">Home</a> |
+					<a class="links" onmouseenter="hide('CV')" href="contact.html">Contact</a> |
+					<a class="links" onmouseenter="show('CV')" href="CV.html">CV</a> |
 					<a class="links" onmouseenter="show('projects')" href="Projects.html">Projects</a>
 				</h2>
 			</div>
 
 
-				<div id="content">
-					<!--
-						<div id="projects" class="allMenus">
-							<img style="height: 100px" src="pictureofme.jpg">
-							<img style="height: 100px" src="pictureofme.jpg">
-						</div>
-					-->
-					<div id="mainarea" onmouseenter="hideAllMenus()">
+			<div id="content">
 					
-						<h1 id="mainTitle">Ben Male</h1>
-						<h2 id="subheading">My Games Design Portfolio</h2>
-
-						<img src="#" id="image1"> 
-					</div>
-
+				<div id="projects" class="ProjectsMenu" onmouseleave="hide('projects')">
+					<a href="#" class="links">
+					<img style="height: 100px" src="pepper.png">
+					</a>
+					<a href="#" class="links">
+					<img style="height: 100px" src="pepper.png">
+					</a>
+				
 				</div>
+				
+				<div id="CV" class="CVMenu" onmouseleave="hide('CV')">
+					<img style="height: 100px" src="pepper.png">
+				</div>
+				
+				<div id="mainarea" onmouseenter="hideAllMenus()">
+					
+					<h1 id="mainTitle">Ben Male</h1>
+					<h2 id="subheading">My Games Design Portfolio</h2>
+
+						<img src="pictureofme.jpg" id="image1"> 
+				</div>
+					
+					
+
+			</div>
 
 	</body>
 

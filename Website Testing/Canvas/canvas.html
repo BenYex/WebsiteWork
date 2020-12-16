@@ -4,9 +4,12 @@
 		<title>HTML5 Canvas</title>
 		
 			<script>
+				var y = 10;
 				var x = 10;
 				var playerImage;
 				var frameNumber = 0;
+				
+				
 				
 				function load()
 				{
@@ -51,7 +54,7 @@
 					ctx.drawImage(playerImage, 
 						frameNumber * frameWidth, 0, 		//where (x, y) in src image to draw from
 						frameWidth, frameHeight, 			//how much (w, h) of src image to draw
-						x, 50, 							//where on canvas to start drawing (x, y)
+						x, y, 								//where on canvas to start drawing (x, y)
 						200, 200);							//how big to draw on canvas (w, h)
 					
 					// Increase x by 1
@@ -72,16 +75,29 @@
 				{
 					if (event.key =="a")
 					{
-					x-=10;
+						x-=10;
 					}
 					else if(event.key == "d")
 					{
-					x+=10;
+						x+=10;
 					}
+					
+					if (event.key =="w")
+					{
+						y-=10;
+					}
+					else if(event.key =="s")
+					{
+						y+=10;
+					}
+				
 				}
 				
+
 				window.onload = main;
 				window.addEventListener("keydown", keydown);
+			
+
 			</script>
 	</head>
 	
