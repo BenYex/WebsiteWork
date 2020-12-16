@@ -60,6 +60,7 @@ body
 	height: 100%;
 	background: yellow;
 	z-index: -1;
+	//border: 3px solid black;
 }
 
 #projects
@@ -105,12 +106,13 @@ body
 
 #content
 {
+	//border: 3px solid black;
 	position: absolute;
 	left: 0%;
 	right: 0%;
 	top: 10%;
-	bottom: 90%;
-}
+	bottom: 90%;}
+
 
 #mainTitle
 {
@@ -121,6 +123,7 @@ body
 	font-style: italic;
 	margin-bottom:  0;
 	margin-top: 200px;
+	//border: 3px solid black;
 }
 
 #subheading
@@ -143,6 +146,14 @@ body
 	border: 3px solid black;
 }
 	
+#models
+{
+	border: 10px solid black;
+	width: 500px;
+	height: 500px;
+	float: center;
+}
+
 
 /* Contact Us CSS Sheet */
 
@@ -158,6 +169,35 @@ body
 	margin-top: 200px;
 }
 
+#mailimage
+{
+	width: 100px;
+	height: 75px;
+	//border: 1px solid grey;
+	position: fixed;
+	left: 35%;
+	top: 60%;
+}
+
+#facebookimage
+{
+	width: 150px;
+	height: 150px;
+	//border: 1px solid grey;
+	position: fixed;
+	left: 46.5%;
+	top: 56%;
+}
+
+#linkedinimage
+{
+	width: 100px;
+	height: 100px;
+	//border: 1px solid grey;
+	position: fixed;
+	left: 61.5%;
+	top: 58.5%;
+}
 
 /* CV CSS Sheet */
 

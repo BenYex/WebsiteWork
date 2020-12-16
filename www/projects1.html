@@ -22,8 +22,12 @@
 				hide('projects');
 				hide('CV');
 			}
-			
+		
+		
 		</script>
+
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 	</head>
 
@@ -35,7 +39,7 @@
 					<a class="links" onmouseenter="hide('CV')" href="home.html">Home</a> |
 					<a class="links" onmouseenter="hide('CV')" href="contact.html">Contact</a> |
 					<a class="links" onmouseenter="show('CV')" href="CV.html">CV</a> |
-					<a class="links" onmouseenter="show('projects')" href="Projects.html">Projects</a>
+					<a class="links" onmouseenter="show('projects')" href="#">Projects</a>
 				</h2>
 			</div>
 
@@ -43,25 +47,23 @@
 			<div id="content">
 					
 				<div id="projects" class="ProjectsMenu" onmouseleave="hide('projects')">
-					<a href="#" class="links">
-					<img style="height: 100px" src="pepper.png">
+					<a href="projects1.html" class="links">
+					<img style="height: 100px; border: 1.5px solid grey;" src="images/model1.png">
 					</a>
-					<a href="#" class="links">
-					<img style="height: 100px" src="pepper.png">
+					<a href="project1.html" class="links">
+					<img style="height: 100px; border: 1.5px solid grey" src="images/pepper.png">
 					</a>
 				
 				</div>
 				
 				<div id="CV" class="CVMenu" onmouseleave="hide('CV')">
-					<img style="height: 100px" src="pepper.png">
 				</div>
 				
 				<div id="mainarea" onmouseenter="hideAllMenus()">
-					
-					<h1 id="mainTitle">Placeholder</h1>
-					<h2 id="subheading">My Games Design Portfolio</h2>
+					<div class="models">
+						<model-viewer  skybox-image="images/wide_street_01_1k.hdr" style="height: 500px; width: 500px; position: fixed; left: 37.5%; top: 24%; border: 3px solid black;" src="models/DamagedHelmet/glTF-Embedded/DamagedHelmet.gltf" auto-rotate camera-controls></model-viewer>
+					</div>
 
-						<img src="pictureofme.jpg" id="image1"> 
 				</div>
 					
 					
