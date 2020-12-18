@@ -213,6 +213,19 @@ body
 	margin-top: 200px;
 }
 
+#cvbutton
+{
+	height: 100px; 
+	width: 300px; 
+	position: fixed; 
+	top: 60%; 
+	left: 42.5%; 
+	background: rgba(56, 218, 242); 
+	color: rgba(245, 252, 255, 0.9); 
+	font-size: 25px; 
+	font-family: Ariel;
+	border: 2px solid grey;
+}
 
 /* Projects CSS Sheet */
 
@@ -226,4 +239,17 @@ body
 	font-style: italic;
 	margin-bottom:  0;
 	margin-top: 200px;
+}
+
+#projecttitle
+{
+	font-size: 60;
+	font-family: Ariel;
+	color: rgba(245, 252, 255, 0.9);
+	font-style: italic;
+	position: fixed;
+	top: 42%;
+	left: 1.5%;
+	text-decoration: underline;
+	margin: 25px;
 }
